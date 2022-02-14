@@ -139,6 +139,9 @@
     <Compile Include="Pages\ucSettings.xaml.cs">
       <DependentUpon>ucSettings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ucCapNhatSoDo.xaml.cs">
+      <DependentUpon>ucCapNhatSoDo.xaml</DependentUpon>
+    </Compile>
     <Page Include="Pages\frmLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -167,6 +170,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ucSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucCapNhatSoDo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -206,6 +213,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\LogoPT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\person.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets')" />

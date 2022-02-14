@@ -8,7 +8,71 @@
              Height="880" Width="1920"
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel Orientation="Vertical">
-        <TextBox x:Name="txtUserName" Text="" FontSize="50"
-                 Margin="5" TabIndex="1"/>
+        <!--<TextBox x:Name="txtUserName" Text="" FontSize="50"
+                 Margin="5" TabIndex="1"/>-->
+        <TabControl Height="1000">
+            <TabItem Header="Mủ cao su" FontSize="30">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10" Width="700" HorizontalContentAlignment="Center">Tên khách hàng</Label>
+                    <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10">Nguyễn Văn A</TextBox>
+                    <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10" Width="700" HorizontalContentAlignment="Center">Số điện thoại</Label>
+                    <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10" >0343232123</TextBox>
+                    <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10" Width="700" HorizontalContentAlignment="Center">Địa chỉ</Label>
+                    <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10">Đồng Xoài, Bình Phước</TextBox>
+                    <CheckBox Cursor="Hand" FontSize="25" Content="Mủ chén" Grid.Row="3" Grid.Column="1" IsChecked="True" HorizontalContentAlignment="Center" BorderThickness="1" BorderBrush="Black"  HorizontalAlignment="Center">
+                        <CheckBox.LayoutTransform>
+                            <ScaleTransform ScaleX="3" ScaleY="3" />
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>
+                    <Label Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10" Width="700" HorizontalContentAlignment="Center">Khối lượng</Label>
+                    <TextBox Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10">4 Tấn</TextBox>
+                    <Button Height="100" Width="1920" Grid.Row="5" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="70" BorderThickness="1" BorderBrush="Black"  Content="Lưu"></Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Điều" FontSize="30" >
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10" Width="700" HorizontalContentAlignment="Center">Tên khách hàng</Label>
+                    <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10">Nguyễn Văn A</TextBox>
+                    <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10" Width="700" HorizontalContentAlignment="Center">Số điện thoại</Label>
+                    <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10" >0343232123</TextBox>
+                    <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10" Width="700" HorizontalContentAlignment="Center">Địa chỉ</Label>
+                    <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10">Đồng Xoài, Bình Phước</TextBox>
+                    <!--<CheckBox Cursor="Hand" FontSize="25" Content="Mủ chén" Grid.Row="3" Grid.Column="1" IsChecked="True" HorizontalContentAlignment="Center" BorderThickness="1" BorderBrush="Black"  HorizontalAlignment="Center">
+                        <CheckBox.LayoutTransform>
+                            <ScaleTransform ScaleX="3" ScaleY="3" />
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>-->
+                    <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10" Width="700" HorizontalContentAlignment="Center">Khối lượng</Label>
+                    <TextBox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" BorderThickness="1" BorderBrush="Black"  Padding="10">4 Tấn</TextBox>
+                    <Button Height="100" Width="1920" Grid.Row="5" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="70" BorderThickness="1" BorderBrush="Black"  Content="Lưu"></Button>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </StackPanel>
 </UserControl>
